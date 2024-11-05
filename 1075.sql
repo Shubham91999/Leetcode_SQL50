@@ -1,4 +1,4 @@
-# Write your MySQL query statement below
+-- Write your MySQL query statement below
 select p.project_id, ifnull(round(sum(e.experience_years)/count(e.experience_years) , 2), 0) as average_years
 from Project p join Employee e
 on p.employee_id = e.employee_id
